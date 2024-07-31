@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="view">
+                <img src="img/gabala.jpg" alt="" />
+              </div>
+              <img src="img/gabala-map.png" alt="" />
+              <h1>Gabala</h1>
+              <p>Culture & Hiatory / Nature / Sights</p>
+              <a href="#">Details </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="card">
+              <div class="view">
+                <img src="img/ismayilli.jpg" alt="" />
+              </div>
+              <img src="img/ismayilli-map.png" alt="" />
+              <h1>Ismayilli</h1>
+              <p>Culture & Hiatory / Nature / Sights</p>
+              <a href="#">Details </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="view">
+                <img src="img/baki.png" alt="" />
+              </div>
+              <img src="img/baki-map.png" alt="" />
+              <h1>Baku</h1>
+              <p>Culture & Hiatory / Nature / Sights</p>
+              <a href="#">Details </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="view">
+                <img src="img/shaki.jpg" alt="" />
+              </div>
+              <img src="img/shaki-map.png" alt="" />
+              <h1>Shaki</h1>
+              <p>Culture & Hiatory / Nature / Sights</p>
+              <a href="#">Details </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next next"></div>
+        <div class="swiper-button-prev prev"></div>
+      </div>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1320: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            scrollbar: {
+              el: ".swiper-scrollbar",
+              hide: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
